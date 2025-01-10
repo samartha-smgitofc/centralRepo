@@ -29,15 +29,18 @@ pip install schedule
 or
 pip install -r requirements.txt
 
-4. Usage
+3. Usage
+   
 3.1 Update the automate_git.py script with the correct paths for your text file and Git repository:
     file_path = "path/to/your/file.txt"
     repo_path = "path/to/your/repo"
+    
 3.2 Run the script:
     python automate_git.py
     The script will run continuously and push the text from the .txt file to the Git repository every day at the specified time (e.g., 10:00 AM).
 
-5. How It Works
+5. How It Works:
+   
   The script uses the schedule library to schedule the push_to_git function to run at a specified time every day.
   The push_to_git function performs the following tasks:
   Changes to the repository directory.
@@ -46,5 +49,5 @@ pip install -r requirements.txt
   Commits the changes with the commit message "Calculation Update".
   Pushes the changes to the remote repository.
 
-6. Contributing
+7. Contributing
   Contributions are welcome! Please feel free to submit a Pull Request.
